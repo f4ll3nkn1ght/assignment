@@ -1,187 +1,158 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Responsive Layout</title>
-<link rel="stylesheet" href="css/style.css">
-<style>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food, LLC</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 
-/* Simple Responsive Framework. */
-.row {
-  width: 99%;
-  margin-right: 1%;
-  
-}
-
-/********** Large devices only **********/
-@media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-    border: 1px solid black;
-    margin-top:1%;
-    margin-left:1%;
-    padding: 0%;
-    background-color: rgb(126, 86, 73);
-    height: 320px;
-    font-size: 175%;
-}
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
-    width: 32.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 99%;
-  }
-}
-
-/********** Medium devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-    border: 1px solid black;
-    margin-top:1%;
-    margin-left:1%;
-    padding: 0%;
-    background-color: rgb(126, 86, 73);
-    height: 250px;
-    font-size: 140%;
-  }
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 48.9%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
-    width: 99%;
-  }
-}
-
-/********** Min devices only **********/
-@media (max-width: 767px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    float: left;
-    border: 1px solid black;
-    margin-top:1%;
-    margin-left:1%;
-    padding: 0%;
-    background-color: rgb(126, 86, 73);
-    height: 200px;
-    font-size:115%;
-  }
-  .col-sm-1 {
-    width: 8.33%;
-  }
-  .col-sm-2 {
-    width: 16.66%;
-  }
-  .col-sm-3 {
-    width: 25%;
-  }
-  .col-sm-4 {
-    width: 33.33%;
-  }
-  .col-sm-5 {
-    width: 41.66%;
-  }
-  .col-sm-6 {
-    width: 48.9%;
-  }
-  .col-sm-7 {
-    width: 58.33%;
-  }
-  .col-sm-8 {
-    width: 66.66%;
-  }
-  .col-sm-9 {
-    width: 74.99%;
-  }
-  .col-sm-10 {
-    width: 83.33%;
-  }
-  .col-sm-11 {
-    width: 91.66%;
-  }
-  .col-sm-12 {
-    width: 99%;
-  }
-}
-
-
-</style>
-</head>
+  </head>
 <body>
-<div class=row>
-  <div class="col-lg-12 col-md-12 col-sm-12"; style="border: 0px; background-color: rgb(153, 138, 138); height: 180px;">
-    <section>Responsible Ethics</section></div></div>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Food, LLC</h1></a>
+          </div>
+          <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only ">Our menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+            <li>
+              <a href="#chicken">
+                <span class="glyphicon glyphicon-search"></span><br class="hidden"> Chicken</a>
+            </li>
+            <li>
+              <a href="#beef">
+                <span class="glyphicon glyphicon-search"></span><br class="hidden"> Beef</a>
+            </li>
+            <li>
+              <a href="#sushi">
+                <span class="glyphicon glyphicon-search"></span><br class="hidden"> Sushi</a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
 
-<div class="row">
-  <div class="col-lg-4 col-md-6 col-sm-12">
-    <h1 style="background-color:rgb(201, 182, 78);">Socrates</h1>
-    <p style="margin-top:8%; vertical-align:bottom;">–A system of morality which is based on relative emotional values is a mere illusion, a thoroughly vulgar conception which has nothing sound in it and nothing true–.</p></div>
-  <div class="col-lg-4 col-md-6 col-sm-12">
-    <h1 style="background-color:rgb(47, 255, 99);">Kant</h1>
-    <p style="margin-top:8%; vertical-align:bottom;">–Live your life as though your every act were to become a universal law–.</p></div>
-  <div class="col-lg-4 col-md-12 col-sm-12">
-    <h1 style="background-color: rgb(43, 255, 0); float:right">The Big Lebowski</h1>
-    <p style="margin-top:8%; vertical-align:bottom;">–Sometimes you eat the bar, sometimes the bar eats you–.</p></div>
-</div>
+  <div class="container">
+        <section class="tit">Our Menu</section></div></div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <h1 id="chicken">Chicken</h1>
+            <p><strong>Preparation time:</strong> 15 minutes<br>
+              <strong>Cooking time:</strong> 1 hour<br>
+              <strong>Servings:</strong> 4</p>
+                    <h2>Ingredients:</h2>
+            <ul style="list-style-type: none;">
+              <li>1 whole chicken (approximately 4 pounds)</li>
+              <li>4 cloves of garlic, minced</li>
+              <li>2 tablespoons olive oil</li>
+              <li>1 tablespoon fresh rosemary, chopped</li>
+              <li>1 tablespoon fresh thyme, chopped</li>
+              <li>1 tablespoon fresh parsley, chopped</li>
+              <li>1 teaspoon salt</li>
+              <li>1/2 teaspoon black pepper</li>
+              <li>1 lemon, sliced</li>
+              <li>1 cup chicken broth</li>
+            </ul>        
+            <h2>Instructions:</h2>        
+            <ol class="custom-counter">
+              <li>Preheat the oven to 375°F (190°C).</li>
+              <li>Rinse the whole chicken under cold water and pat it dry with paper towels. Place the chicken in a roasting pan.</li>        
+              <li>In a small bowl, mix together the minced garlic, olive oil, chopped rosemary, thyme, parsley, salt, and black pepper to create a flavorful herb mixture.</li>        
+              <li>Rub the herb mixture all over the chicken, making sure to coat it evenly, including the cavity. If you prefer, gently lift the skin and rub some of the mixture directly onto the meat.</li>        
+              <li>Place the lemon slices inside the chicken cavity for added flavor. Truss the chicken if desired to help it cook more evenly.</li>        
+              <li>Pour the chicken broth into the bottom of the roasting pan. This will keep the chicken moist and add extra flavor to the drippings.</li>        
+              <li>Roast the chicken in the preheated oven for about 1 hour or until the internal temperature reaches 165°F (74°C) in the thickest part of the thigh.</li>        
+              <li>Baste the chicken with the pan juices every 20-30 minutes to ensure a crispy and golden skin.</li>        
+              <li>Once the chicken is cooked, remove it from the oven and let it rest for 10-15 minutes before carving.</li>        
+              <li>Serve the garlic herb roasted chicken with your favorite sides and enjoy a delicious, flavorful meal with family and friends.</li>
+            </ol><br>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <h1 id="beef">Beef</h1>
+            <p><strong>Preparation time:</strong> 20 minutes<br>
+              <strong>Cooking time:</strong> 1 hour 30 minutes<br>
+              <strong>Servings:</strong> 6</p>
+            <h2>Ingredients:</h2>
+            <ul style="list-style-type: none;">
+              <li>3 pounds beef roast (such as sirloin or ribeye)</li>
+              <li>4 cloves of garlic, minced</li>
+              <li>3 tablespoons olive oil</li>
+              <li>2 tablespoons fresh rosemary, chopped</li>
+              <li>1 tablespoon fresh thyme, chopped</li>
+              <li>1 teaspoon salt</li>
+              <li>1/2 teaspoon black pepper</li>
+              <li>1 cup beef broth</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol class="custom-counter">
+              <li>Preheat the oven to 375°F (190°C).</li>        
+              <li>Place the beef roast in a roasting pan.</li>        
+              <li>In a small bowl, mix together the minced garlic, olive oil, chopped rosemary, thyme, salt, and black pepper to create a flavorful herb mixture.</li>        
+              <li>Rub the herb mixture all over the beef roast, ensuring it's evenly coated.</li>        
+              <li>Pour the beef broth into the roasting pan to keep the meat moist during cooking.</li>        
+              <li>Roast the beef in the preheated oven for about 1 hour 30 minutes or until the internal temperature reaches your desired level of doneness.</li>        
+              <li>Baste the beef with the pan juices every 30 minutes for a succulent and flavorful roast.</li>        
+              <li>Once the beef is cooked, remove it from the oven and let it rest for 15 minutes before carving.</li>        
+              <li>Slice the roast beef and serve it with your favorite sides. Enjoy!</li>
+            </ol>
+            <br>
+            </div>
+
+          <div class="col-lg-4 col-md-12 col-xs-12">
+            <h1 id="sushi">Sushi</h1>
+            <p><strong>Preparation time:</strong> 30 minutes<br>
+              <strong>Cooking time:</strong> 0 minutes (no cooking required)<br>
+              <strong>Servings:</strong> 4</p>
+            <h2>Ingredients:</h2>
+            <ul style="list-style-type: none;">
+              <li>2 cups sushi rice</li>
+              <li>1/4 cup rice vinegar</li>
+              <li>2 tablespoons sugar</li>
+              <li>1 teaspoon salt</li>
+              <li>Nori (seaweed) sheets</li>
+              <li>Sushi-grade fish (such as tuna or salmon), sliced</li>
+              <li>Vegetables (cucumber, avocado, and carrot), julienned</li>
+              <li>Soy sauce, for dipping</li>
+              <li>Pickled ginger and wasabi, for serving</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol class="custom-counter">
+              <li>Rinse the sushi rice under cold water until the water runs clear. Cook the rice according to the package instructions.</li>
+              <li>While the rice is still warm, mix it with rice vinegar, sugar, and salt. Let it cool to room temperature.</li>
+              <li>Place a bamboo sushi rolling mat on a clean surface. Put a sheet of plastic wrap on the mat to prevent rice from sticking.</li>
+              <li>Place a sheet of nori on the plastic wrap, shiny side down. Wet your hands and spread a thin layer of sushi rice over the nori, leaving a small border at the top.</li>
+              <li>Arrange slices of fish and vegetables along the center of the rice.</li>
+              <li>Using the bamboo mat, carefully roll the sushi away from you, pressing gently to shape it. Seal the edge with a bit of water.</li>
+              <li>Repeat the process with different fillings or make variations of rolls.</li>
+              <li>Using a sharp knife, moisten it with water and slice the roll into bite-sized pieces.</li>
+              <li>Serve the sushi rolls with soy sauce, pickled ginger, and wasabi.</li>
+              <li>Enjoy your homemade sushi!</li>
+            </ol>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
